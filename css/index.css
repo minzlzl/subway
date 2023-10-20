@@ -1,0 +1,125 @@
+body, ul, li, p, h1, h2, figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  font-size: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Pretendard-Regular";
+}
+
+.wrap {
+  overflow-x: hidden;
+}
+.wrap .line {
+  border: 3px solid #009223;
+}
+.wrap header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+.wrap header .header_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap header .header_wrap > a {
+  font-size: 0;
+}
+.wrap header .header_wrap > a img {
+  width: 160px;
+}
+.wrap header .header_wrap > ul {
+  display: flex;
+  align-items: center;
+}
+.wrap header .header_wrap > ul li {
+  margin-left: 60px;
+}
+.wrap header .header_wrap > ul li:first-child {
+  margin-left: 0;
+}
+.wrap header .header_wrap > ul li a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #222;
+}
+.wrap main {
+  padding-top: 90px;
+}
+.wrap main .con1_wrap {
+  margin-bottom: 150px;
+}
+.wrap main .con2_wrap {
+  width: 1200px;
+  margin: 0 auto 150px;
+}
+.wrap main .con2_wrap h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.wrap main .con2_wrap .menu_btn {
+  margin-bottom: 50PX;
+}
+.wrap main .con2_wrap .menu_btn > ul {
+  display: flex;
+}
+.wrap main .con2_wrap .menu_btn > ul li {
+  margin-right: 10px;
+  color: #009223;
+  border: 1px solid #009223;
+  width: 100px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.wrap main .con2_wrap .menu > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap main .con2_wrap .menu > ul li .menu_box {
+  background-color: #f5f5f5;
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.wrap main .con2_wrap .menu > ul li .menu_box figure img {
+  width: 220px;
+}
+.wrap main .con2_wrap .menu > ul li .menu_txt {
+  text-align: center;
+}

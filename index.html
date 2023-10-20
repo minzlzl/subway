@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>서브웨이</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="line"></div>
+    <header>
+      <div class="header_wrap">
+        <a href="index.html"><img src="/img/logo.png" alt=""></a>
+        <ul>
+          <li><a href="#">메뉴소개</a></li>
+          <li><a href="#">이용방법</a></li>
+          <li><a href="#">새소식</a></li>
+          <li><a href="#">써브웨이</a></li>
+          <li><a href="#">가맹점</a></li>
+          <li><a href="#">온라인 주문</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="con1_wrap swiper mySwiper">
+        <div class="con1 swiper-wrapper">
+          <figure class="swiper-slide"><img src="./img/main01.jpg" alt=""></figure>
+          <figure class="swiper-slide"><img src="./img/main02.jpg" alt=""></figure>
+          <figure class="swiper-slide"><img src="./img/main03.jpg" alt=""></figure>
+        </div>
+        <div class="swiper-pagination"></div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              dynamicBullets: true,
+            },
+          });
+        </script>
+      </div>
+      <div class="con2_wrap">
+        <h2>메뉴소개</h2>
+        <div class="menu_btn">
+          <ul>
+            <li>샌드위치</li>
+            <li>랩 · 기타</li>
+            <li>샐러드</li>
+            <li>아침메뉴</li>
+            <li>스마일 썹</li>
+            <li>단체메뉴</li>
+          </ul>
+        </div>
+        <div class="menu swiper mySwiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4.5,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <div class="line"></div>
+  </div>
+</body>
+</html>
