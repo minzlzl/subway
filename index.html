@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 폰트어썸 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <!-- 스와이퍼 슬라이드 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- js -->
+  <script defer src="./js/header.js"></script>
+  <script defer src="./js/con1_swiper.js"></script>
+  <script defer src="./js/con2_swiper.js"></script>
   <title>서브웨이</title>
 </head>
 <body>
@@ -22,29 +29,19 @@
           <li><a href="#">새소식</a></li>
           <li><a href="#">써브웨이</a></li>
           <li><a href="#">가맹점</a></li>
-          <li><a href="#">온라인 주문</a></li>
+          <li><a href="#">온라인 주문</a/li>
         </ul>
       </div>
     </header>
 
     <main>
-      <div class="con1_wrap swiper mySwiper">
+      <div class="con1_wrap swiper mySwipers">
         <div class="con1 swiper-wrapper">
           <figure class="swiper-slide"><img src="./img/main01.jpg" alt=""></figure>
           <figure class="swiper-slide"><img src="./img/main02.jpg" alt=""></figure>
           <figure class="swiper-slide"><img src="./img/main03.jpg" alt=""></figure>
         </div>
         <div class="swiper-pagination"></div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            pagination: {
-              el: ".swiper-pagination",
-              dynamicBullets: true,
-            },
-          });
-        </script>
       </div>
       <div class="con2_wrap">
         <h2>메뉴소개</h2>
@@ -76,20 +73,119 @@
                 <span>374 kcal</span>
               </div>
             </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt_hover">
+                <div class="menu_bg"></div>
+                <div class="menu_bg_txt">
+                  <p>단품 : 7,000원</p>
+                  <p>세트 : 10,000원</p>
+                </div>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt_hover">
+                <div class="menu_bg"></div>
+                <div class="menu_bg_txt">
+                  <p>단품 : 7,000원</p>
+                  <p>세트 : 10,000원</p>
+                </div>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt_hover">
+                <div class="menu_bg"></div>
+                <div class="menu_bg_txt">
+                  <p>단품 : 7,000원</p>
+                  <p>세트 : 10,000원</p>
+                </div>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="menu_box">
+                <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
+              </div>
+              <div class="menu_txt_hover">
+                <div class="menu_bg"></div>
+                <div class="menu_bg_txt">
+                  <p>단품 : 7,000원</p>
+                  <p>세트 : 10,000원</p>
+                </div>
+              </div>
+              <div class="menu_txt">
+                <p>스파이시 바비큐</p>
+                <span>374 kcal</span>
+              </div>
+            </li>
           </ul>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4.5,
-            spaceBetween: 30,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
-        </script>
+      </div>
+      <div class="con3_wrap">
+        <h2>이벤트 · 프로모션</h2>
+        <ul>
+          <li>
+            <div class="event_bg"></div>
+            <figure><img src="./img/event/1.jpg" alt=""></figure>
+            <div class="event_txt">
+              <p>스파이시 시리즈</p>
+              <span>2023.09.11 ~ 2023.11.03</span>
+            </div>
+          </li>
+          <li>
+            <figure><img src="./img/event/2.jpg" alt=""></figure>
+            <div class="event_txt">
+              <p>스파이시 시리즈</p>
+              <span>2023.09.11 ~ 2023.11.03</span>
+            </div>
+          </li>
+          <li>
+            <figure><img src="./img/event/3.jpg" alt=""></figure>
+            <div class="event_txt">
+              <p>스파이시 시리즈</p>
+              <span>2023.09.11 ~ 2023.11.03</span>
+            </div>
+          </li>
+        </ul>
+        <div class="event_plus">more ></div>
+      </div>
+      <div class="con4_wrap">
+        <h2>공지사항</h2>
+        <div class="notice_flex">
+          <div class="notice_wrap">
+            <div class="notice_tit">
+              <figure><img src="./img/icon/bullhorn_solid.svg" alt=""></figure>
+              <p>써브웨이의 다양한 소식을 빠르게 전달해 드립니다.</p>
+            </div>
+            <div class="notice">
+              <p>· 빵 3종 (화이트, 하티, 파마산 오레가노) 일시 제공 중단 안내 *일부 매장에 한함</p>
+              <p>· 써브웨이와 함께하는 JTBC 수목드라마 '이 연애는 불가항력'</p>
+              <p>· 써브웨이와 함께하는 SBS 금토드라마 '소방서 옆 경찰서 그리고 국과수'</p>
+              <p>· 빵 3종 (화이트, 하티, 파마산 오레가노) 일시 제공 중단 안내 *일부 매장에 한함</p>
+            </div>
+          </div>
+          <figure><img src="./img/01.jpg" alt=""></figure>
+        </div>
+        <p>more ></p>
       </div>
     </main>
 
@@ -98,5 +194,7 @@
     </footer>
     <div class="line"></div>
   </div>
+
+  
 </body>
 </html>
