@@ -41,11 +41,15 @@
           &:first-child{
             margin-left: 0;
           }
+          &:hover{
+            >ul>li{
+              display: block;
+            }
+          }
           >a{
             font-size: 22px;
             font-weight: 600;
             color:#333;
-            transition: .5s;
             &:hover{
               color:#009223;
             }
@@ -55,8 +59,20 @@
             top: 90px;
             left: 0;
             width: 100%;
+            text-align: center;
             >li{
               background-color: #fff;
+              padding-top:10px;
+              display: none;
+              &:last-child{
+                padding-bottom: 10px;
+              }
+              a{
+                transition: .5s;
+                &:hover{
+                  color:#009223;
+                }
+              }
             }
           }
         }
