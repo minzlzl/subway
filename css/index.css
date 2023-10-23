@@ -114,6 +114,14 @@ body {
 .wrap main .con1_wrap {
   margin-bottom: 150px;
 }
+.wrap main .con1_wrap .swiper-pagination .swiper-pagination-bullet {
+  background-color: #FFC20D;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+}
+.wrap main .con1_wrap .swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 13px);
+}
 .wrap main .con2_wrap {
   width: 1200px;
   margin: 0 auto 150px;
@@ -163,6 +171,12 @@ body {
 }
 .wrap main .con2_wrap .menu > ul li .menu_box figure img {
   width: 220px;
+}
+.wrap main .con2_wrap .menu > ul li .menu_box:hover img {
+  opacity: 0.6;
+}
+.wrap main .con2_wrap .menu > ul li .menu_box:hover ~ .menu_txt_hover {
+  display: block;
 }
 .wrap main .con2_wrap .menu > ul li .menu_txt_hover {
   display: none;
@@ -364,8 +378,16 @@ body {
   font-size: 18px;
   margin-bottom: 15px;
 }
+.wrap main .con4_wrap .notice_flex > figure {
+  overflow: hidden;
+  border-radius: 20px 0 20px 0;
+}
 .wrap main .con4_wrap .notice_flex > figure img {
   border-radius: 20px 0 20px 0;
+  transition: transform 0.5s;
+}
+.wrap main .con4_wrap .notice_flex > figure img:hover {
+  transform: scale(1.2);
 }
 .wrap main .con4_wrap > p {
   position: absolute;

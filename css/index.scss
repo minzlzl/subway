@@ -83,6 +83,16 @@
     padding-top: 90px;
     .con1_wrap{
       margin-bottom: 150px;
+      .swiper-pagination{
+        .swiper-pagination-bullet{
+          background-color: #FFC20D;
+          width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+          height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+        }
+      }
+      .swiper-pagination-horizontal{
+        bottom: var(--swiper-pagination-bottom,13px);
+      }
     }
     .con2_wrap{
       width: 1200px;
@@ -133,6 +143,14 @@
               figure{
                 img{
                   width: 220px;
+                }
+              }
+              &:hover{
+                img{
+                  opacity: 0.6;
+                }
+                ~.menu_txt_hover{
+                  display: block;
                 }
               }
             }
@@ -349,8 +367,14 @@
           }
         }
         >figure{
+          overflow: hidden;
+          border-radius: 20px 0 20px 0;
           img{
             border-radius: 20px 0 20px 0;
+            transition: transform .5s;
+            &:hover{
+              transform: scale(1.2); 
+            }
           }
         }
       }
