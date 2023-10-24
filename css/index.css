@@ -38,9 +38,6 @@ body {
 }
 .wrap header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 90px;
   position: fixed;
   top: 6px;
@@ -67,46 +64,70 @@ body {
   align-items: center;
 }
 .wrap header .header_wrap > ul > li {
-  margin-left: 60px;
+  padding-left: 60px;
   height: 90px;
   display: flex;
   align-items: center;
   position: relative;
 }
 .wrap header .header_wrap > ul > li:first-child {
-  margin-left: 0;
-}
-.wrap header .header_wrap > ul > li:hover > ul > li {
-  display: block;
+  padding-left: 0;
 }
 .wrap header .header_wrap > ul > li > a {
   font-size: 22px;
   font-weight: 600;
   color: #333;
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 .wrap header .header_wrap > ul > li > a:hover {
   color: #009223;
 }
-.wrap header .header_wrap > ul > li > ul {
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  text-align: center;
+.wrap header .header_wrap > ul > li > a:hover ~ .sub > ul > li > a {
+  border-bottom: 1px solid #FFF;
 }
-.wrap header .header_wrap > ul > li > ul > li {
-  background-color: #fff;
-  padding-top: 10px;
+.wrap header .sub {
+  width: 100%;
+  background-color: #009223;
+  position: relative;
+  height: 49px;
+}
+.wrap header .sub > ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrap header .sub > ul:nth-of-type(2) {
   display: none;
 }
-.wrap header .header_wrap > ul > li > ul > li:last-child {
-  padding-bottom: 10px;
+.wrap header .sub > ul:nth-of-type(3) {
+  display: none;
 }
-.wrap header .header_wrap > ul > li > ul > li a {
-  transition: 0.5s;
+.wrap header .sub > ul:nth-of-type(4) {
+  display: none;
 }
-.wrap header .header_wrap > ul > li > ul > li a:hover {
-  color: #009223;
+.wrap header .sub > ul:nth-of-type(5) {
+  display: none;
+}
+.wrap header .sub > ul:nth-of-type(6) {
+  display: none;
+}
+.wrap header .sub > ul > li {
+  padding: 15px 20px;
+}
+.wrap header .sub > ul > li:nth-of-type(1) {
+  padding-left: 0;
+}
+.wrap header .sub > ul > li a {
+  color: #fff;
+}
+.wrap header .sub > ul.actives {
+  display: flex;
 }
 .wrap main {
   padding-top: 90px;
@@ -175,10 +196,10 @@ body {
 .wrap main .con2_wrap .menu > ul li .menu_box:hover img {
   opacity: 0.6;
 }
-.wrap main .con2_wrap .menu > ul li .menu_box:hover ~ .menu_txt_hover {
+.wrap main .con2_wrap .menu > ul li .menu_box:hover .menu_txt_hover {
   display: block;
 }
-.wrap main .con2_wrap .menu > ul li .menu_txt_hover {
+.wrap main .con2_wrap .menu > ul li .menu_box .menu_txt_hover {
   display: none;
   position: absolute;
   top: 0;
@@ -186,14 +207,14 @@ body {
   height: 220px;
   left: 0;
 }
-.wrap main .con2_wrap .menu > ul li .menu_txt_hover .menu_bg {
+.wrap main .con2_wrap .menu > ul li .menu_box .menu_txt_hover .menu_bg {
   width: 100%;
   height: 100%;
   background-color: #000;
   opacity: 0.7;
   border-radius: 10px;
 }
-.wrap main .con2_wrap .menu > ul li .menu_txt_hover .menu_bg_txt {
+.wrap main .con2_wrap .menu > ul li .menu_box .menu_txt_hover .menu_bg_txt {
   color: #fff;
   position: absolute;
   top: 0;

@@ -25,35 +25,95 @@
       <div class="header_wrap">
         <a href="index.html"><img src="/img/logo.png" alt=""></a>
         <ul>
-          <li>
-            <a href="#">메뉴소개</a>
-            <ul>
-              <li><a href="#">샌드위치</a></li>
-              <li><a href="#">랩 · 기타</a></li>
-              <li><a href="#">샐러드</a></li>
-              <li><a href="#">아침메뉴</a></li>
-              <li><a href="#">스마일 썹</a></li>
-              <li><a href="#">단체메뉴</a></li>
-            </ul>
-          </li>
-          <li><a href="#">이용방법</a>
-            <ul>
-              <li><a href="#">샌드위치</a></li>
-              <li><a href="#">랩 · 기타</a></li>
-              <li><a href="#">샐러드</a></li>
-              <li><a href="#">아침메뉴</a></li>
-              <li><a href="#">스마일 썹</a></li>
-              <li><a href="#">단체메뉴</a></li>
-            </ul>
-          </li>
+          <li><a href="#">메뉴소개</a></li>
+          <li><a href="#">이용방법</a></li>
           <li><a href="#">새소식</a></li>
           <li><a href="#">써브웨이</a></li>
           <li><a href="#">가맹점</a></li>
           <li><a href="#">온라인 주문</a/li>
         </ul>
       </div>
+      <div class="sub">
+        <ul>
+          <li><a href="#">샌드위치</a></li>
+          <li><a href="#">랩 · 기타</a></li>
+          <li><a href="#">샐러드</a></li>
+          <li><a href="#">아침메뉴</a></li>
+          <li><a href="#">스마일 썹</a></li>
+          <li><a href="#">단체메뉴</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">서브웨이 이용방법</a></li>
+          <li><a href="#">단체메뉴 이용방법</a></li>
+          <li><a href="#">신선한 재료 소개</a></li>
+          <li><a href="#">App 이용방법</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">이벤트 · 프로모션</a></li>
+          <li><a href="#">뉴스 · 공지사항</a></li>
+          <li><a href="#">광고영상</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">써브웨이 역사</a></li>
+          <li><a href="#">써브웨이 약속</a></li>
+          <li><a href="#">샌드위치 아티스트 지원</a></li>
+          <li><a href="#">매장찾기</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">써브웨이 프랜차이즈</a></li>
+          <li><a href="#">가맹관련 FAQ</a></li>
+          <li><a href="#">가맹신청 · 문의</a></li>
+          <li><a href="#">지사안내</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">FAST-SUB</a></li>
+          <li><a href="#">HOME-SUB</a></li>
+          <li><a href="#">단체주문</a></li>
+        </ul>
+      </div>
     </header>
 
+    <script>
+      const elLi1 = document.querySelector('.header_wrap>ul>li:nth-of-type(1) a'),
+            elLi2 = document.querySelector('.header_wrap>ul>li:nth-of-type(2) a'),
+            elLi3 = document.querySelector('.header_wrap>ul>li:nth-of-type(3) a'),
+            elLi4 = document.querySelector('.header_wrap>ul>li:nth-of-type(4) a'),
+            elLi5 = document.querySelector('.header_wrap>ul>li:nth-of-type(5) a'),
+            elLi6 = document.querySelector('.header_wrap>ul>li:nth-of-type(6)'),
+            subUl1 = document.querySelector('.sub>ul:nth-of-type(1)'),
+            subUl2 = document.querySelector('.sub>ul:nth-of-type(2)'),
+            subUl3 = document.querySelector('.sub>ul:nth-of-type(3)'),
+            subUl4 = document.querySelector('.sub>ul:nth-of-type(4)'),
+            subUl5 = document.querySelector('.sub>ul:nth-of-type(5)'),
+            subUl6 = document.querySelector('.sub>ul:nth-of-type(6)')
+
+
+      const left_width1 = elLi1.getBoundingClientRect().left + 60;
+      subUl1.style = `left:${left_width1}px`
+      const left_width2 = elLi2.getBoundingClientRect().left + 60;
+      subUl2.style = `left:${left_width2}px`
+      const left_width3 = elLi3.getBoundingClientRect().left + 60 - 15;
+      subUl3.style = `left:${left_width3}px`
+      const left_width4 = elLi4.getBoundingClientRect().left + 60 - 30;
+      subUl4.style = `left:${left_width4}px`
+      const left_width5 = elLi5.getBoundingClientRect().left + 60 - 45;
+      subUl5.style = `left:${left_width5}px`
+      const left_width6 = elLi6.getBoundingClientRect().left + 60 + 15;
+      subUl6.style = `left:${left_width6}px`
+
+      
+
+
+      // const elLi_1 = document.querySelector('.header_wrap>ul>li:nth-of-type(1)'),
+      //       subUl = document.querySelectorAll('.sub>ul')      
+
+      // const left_width = elLi_1.getBoundingClientRect().left + 60
+      // subUl.forEach(function(v){
+      //   v.style = `left:${left_width}px`
+      // });
+      // console.log(subUl)
+    </script>
+    
     <main>
       <div class="con1_wrap swiper mySwipers">
         <div class="con1 swiper-wrapper">
@@ -80,12 +140,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/spicyBBQ.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -96,12 +156,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/spicyShrimp.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -112,12 +172,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/spicyItalia.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -128,12 +188,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/steakCheese.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -144,12 +204,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/chickenBaconAvocado.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -160,12 +220,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/shrimp.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
@@ -176,12 +236,12 @@
             <li class="swiper-slide">
               <div class="menu_box">
                 <figure><img src="./img/menu/roastedChicken.png" alt=""></figure>
-              </div>
-              <div class="menu_txt_hover">
-                <div class="menu_bg"></div>
-                <div class="menu_bg_txt">
-                  <p>단품 : 7,000원</p>
-                  <p>세트 : 10,000원</p>
+                <div class="menu_txt_hover">
+                  <div class="menu_bg"></div>
+                  <div class="menu_bg_txt">
+                    <p>단품 : 7,000원</p>
+                    <p>세트 : 10,000원</p>
+                  </div>
                 </div>
               </div>
               <div class="menu_txt">
