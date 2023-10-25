@@ -1,25 +1,9 @@
 const menuBtn = document.querySelectorAll('.menu_btn>ul>li'),
-      menuBoxFig = document.querySelectorAll('.menu_box figure'),
-      menuHover = document.querySelectorAll('.menu_txt_hover');
-      
-
+      menu = document.querySelectorAll('.menu')
+console.log(menu)
 // //con2//
-// let num2 = 0;
-// menuBoxFig.forEach(function(v2,k2){
-//   v2.addEventListener('mouseover',()=>{
-//     menuHover[num].style = `display:block`
-//     num2 = k2;
-//   })
-//   v2.addEventListener('mouseleave',()=>{
-//     menuHover[num].style = `display:none`
-//   })
-// })
-
-
-
-
-//con3//
 let num = 0;
+let num2 = 0;
 // arr = ['<li>~~</li>','']
 menuBtn.forEach(function(v,k){
   v.onclick = function(){
@@ -28,6 +12,8 @@ menuBtn.forEach(function(v,k){
     // num = k  2
     menuBtn[num].classList.remove('active1');
     v.classList.add('active1');
+    menu[num].classList.remove('active3')
+    menu[k].classList.add('active3')
     num = k;
   };
 });
