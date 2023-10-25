@@ -1,0 +1,231 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body, ul, li, p, h1, h2, figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  font-size: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+}
+
+.line {
+  border: 3px solid #009223;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 10, 0, 0.1);
+}
+header .header_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_wrap > a {
+  font-size: 0;
+}
+header .header_wrap > a img {
+  width: 160px;
+}
+header .header_wrap > ul {
+  display: flex;
+  align-items: center;
+}
+header .header_wrap > ul > li {
+  padding-left: 60px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .header_wrap > ul > li:first-child {
+  padding-left: 0;
+}
+header .header_wrap > ul > li > a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+header .header_wrap > ul > li > a:hover {
+  color: #009223;
+}
+header .header_wrap > ul > li > a:hover ~ .sub > ul > li > a {
+  border-bottom: 1px solid #FFF;
+}
+header .sub {
+  width: 100%;
+  background-color: #009223;
+  position: relative;
+  height: 49px;
+  display: none;
+}
+header .sub > ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .sub > ul:nth-of-type(1) {
+  display: none;
+}
+header .sub > ul:nth-of-type(2) {
+  display: none;
+}
+header .sub > ul:nth-of-type(3) {
+  display: none;
+}
+header .sub > ul:nth-of-type(4) {
+  display: none;
+}
+header .sub > ul:nth-of-type(5) {
+  display: none;
+}
+header .sub > ul:nth-of-type(6) {
+  display: none;
+}
+header .sub > ul > li {
+  padding: 15px 20px;
+}
+header .sub > ul > li:nth-of-type(1) {
+  padding-left: 0;
+}
+header .sub > ul > li a {
+  color: #fff;
+}
+header .sub > ul.actives {
+  display: flex;
+}
+
+footer {
+  background-color: #FFC20D;
+  width: 100%;
+  color: #f5f5f5;
+}
+footer .footer_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .footer_wrap .top_wrap {
+  padding: 20px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+footer .footer_wrap .top_wrap ul {
+  display: flex;
+}
+footer .footer_wrap .top_wrap ul li {
+  margin-right: 20px;
+  font-size: 14px;
+}
+footer .footer_wrap .bottom_wrap {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_wrap .bottom_wrap .bot_left ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .footer_wrap .bottom_wrap .bot_left ul li {
+  font-size: 14px;
+  margin-right: 20px;
+}
+footer .footer_wrap .bottom_wrap .bot_left p {
+  font-size: 14px;
+}
+footer .footer_wrap .bottom_wrap .bot_right {
+  display: flex;
+}
+footer .footer_wrap .bottom_wrap .bot_right i {
+  margin-left: 10px;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
+  font-size: 18px;
+}
+
+.top {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #009223;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.top i {
+  font-size: 20px;
+  color: #009223;
+}
+
+.wrap {
+  overflow-x: hidden;
+  position: relative;
+}
+.wrap .sandwich {
+  padding-top: 90px;
+}
+.wrap .sandwich .con1_wrap {
+  margin-bottom: 150px;
+  background: url("/img/bg_01.jpg");
+  background-size: 100% 100%;
+  width: 1920px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.wrap .sandwich .con1_wrap h2 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.wrap .sandwich .con1_wrap p {
+  white-space: pre-line;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}

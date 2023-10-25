@@ -3,6 +3,173 @@ figure{font-size: 0;}
 li{list-style: none;}
 a{text-decoration: none; color:#000;}
 
-@font-face { font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
-body{font-family: 'Pretendard-Regular'}
-* { box-sizing: border-box; }
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+// @font-face { font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+// body{font-family: 'Pretendard-Regular'}
+* {box-sizing: border-box; font-family: Pretendard,'Noto Sans KR', sans-serif;}
+
+
+.line{
+  border: 3px solid #009223;
+}
+header{
+  width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  height: 90px;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 10, 0, 0.1);
+  .header_wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >a{
+      font-size: 0;
+      img{
+        width: 160px;
+      }
+    }
+    >ul{
+      display: flex;
+      align-items: center;
+      >li{
+        padding-left: 60px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:first-child{
+          padding-left: 0;
+        }
+        >a{
+          font-size: 22px;
+          font-weight: 600;
+          color:#333;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          &:hover{
+            color:#009223;
+            ~.sub>ul>li>a{
+              border-bottom: 1px solid #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sub{
+    width: 100%;
+    background-color: #009223;
+    position: relative;
+    height: 49px;
+    display: none;
+    >ul{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      &:nth-of-type(1){display: none;}
+      &:nth-of-type(2){display: none;}
+      &:nth-of-type(3){display: none;}
+      &:nth-of-type(4){display: none;}
+      &:nth-of-type(5){display: none;}
+      &:nth-of-type(6){display: none;}
+      >li{
+        padding:15px 20px;
+        &:nth-of-type(1){
+          padding-left: 0;
+        }
+        a{
+          color:#fff;
+        }
+      }
+    }
+    >ul.actives{
+      display: flex;
+    }
+  }
+}
+footer{
+  background-color: #FFC20D;
+  width: 100%;
+  color:#f5f5f5;
+  .footer_wrap{
+    width:1200px;
+    margin: 0 auto;
+    .top_wrap{
+      padding: 20px 0;
+      border-bottom: 1px solid #f5f5f5;
+      ul{
+        display: flex;
+        li{
+          margin-right: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom_wrap{
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .bot_left{
+        ul{
+          display: flex;
+          margin-bottom: 10px;
+          li{
+            font-size: 14px;
+            margin-right: 20px;
+          }
+        }
+        p{font-size: 14px;}
+      }
+      .bot_right{
+        display: flex;
+        i{
+          margin-left: 10px;
+          border: 2px solid #f5f5f5;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          color:#f5f5f5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:nth-of-type(3){
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.top{
+  position:fixed;
+  right: 5%;
+  bottom:5%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #009223;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  i{
+    font-size: 20px;
+    color:#009223;
+  }
+}

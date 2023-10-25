@@ -1,6 +1,7 @@
 const menuBtn = document.querySelectorAll('.menu_btn>ul>li'),
-      menu = document.querySelectorAll('.menu')
-console.log(menu)
+      menu = document.querySelectorAll('.menu');
+
+
 // //con2//
 let num = 0;
 let num2 = 0;

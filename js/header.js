@@ -19,9 +19,9 @@ elA.forEach((v,k)=>{
   v.addEventListener("mouseover",function(){
     sub.style = `display:block`;
     let left = v.getBoundingClientRect().left;
-    elUl[num].style= `display:none`;
+    elUl[ulNum].style= `display:none`;
     elUl[k].style= `display:flex; left:${left}px`;
-    num = k;
+    ulNum = k;
   });
 });
 elUl.forEach((hover)=>{
