@@ -15,12 +15,15 @@
   <script defer src="./js/header.js"></script>
   <script defer src="./js/main.js"></script>
   <script defer src="./js/con1_swiper.js"></script>
-  <script defer src="./js/con2_swiper.js"></script>
+  <script defer src="./js/con2&4_swiper.js"></script>
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>서브웨이</title>
 </head>
 <body>
   <div class="wrap">
     <div class="line"></div>
+
     <header>
       <div class="header_wrap">
         <a href="index.html"><img src="/img/logo.png" alt=""></a>
@@ -72,47 +75,6 @@
         </ul>
       </div>
     </header>
-
-    <script>
-      const elLi1 = document.querySelector('.header_wrap>ul>li:nth-of-type(1) a'),
-            elLi2 = document.querySelector('.header_wrap>ul>li:nth-of-type(2) a'),
-            elLi3 = document.querySelector('.header_wrap>ul>li:nth-of-type(3) a'),
-            elLi4 = document.querySelector('.header_wrap>ul>li:nth-of-type(4) a'),
-            elLi5 = document.querySelector('.header_wrap>ul>li:nth-of-type(5) a'),
-            elLi6 = document.querySelector('.header_wrap>ul>li:nth-of-type(6)'),
-            subUl1 = document.querySelector('.sub>ul:nth-of-type(1)'),
-            subUl2 = document.querySelector('.sub>ul:nth-of-type(2)'),
-            subUl3 = document.querySelector('.sub>ul:nth-of-type(3)'),
-            subUl4 = document.querySelector('.sub>ul:nth-of-type(4)'),
-            subUl5 = document.querySelector('.sub>ul:nth-of-type(5)'),
-            subUl6 = document.querySelector('.sub>ul:nth-of-type(6)')
-
-
-      const left_width1 = elLi1.getBoundingClientRect().left + 60;
-      subUl1.style = `left:${left_width1}px`
-      const left_width2 = elLi2.getBoundingClientRect().left + 60;
-      subUl2.style = `left:${left_width2}px`
-      const left_width3 = elLi3.getBoundingClientRect().left + 60 - 15;
-      subUl3.style = `left:${left_width3}px`
-      const left_width4 = elLi4.getBoundingClientRect().left + 60 - 30;
-      subUl4.style = `left:${left_width4}px`
-      const left_width5 = elLi5.getBoundingClientRect().left + 60 - 45;
-      subUl5.style = `left:${left_width5}px`
-      const left_width6 = elLi6.getBoundingClientRect().left + 60 + 15;
-      subUl6.style = `left:${left_width6}px`
-
-      
-
-
-      // const elLi_1 = document.querySelector('.header_wrap>ul>li:nth-of-type(1)'),
-      //       subUl = document.querySelectorAll('.sub>ul')      
-
-      // const left_width = elLi_1.getBoundingClientRect().left + 60
-      // subUl.forEach(function(v){
-      //   v.style = `left:${left_width}px`
-      // });
-      // console.log(subUl)
-    </script>
     
     <main>
       <div class="con1_wrap swiper mySwipers">
@@ -309,7 +271,12 @@
               <p>· 빵 3종 (화이트, 하티, 파마산 오레가노) 일시 제공 중단 안내 *일부 매장에 한함</p>
             </div>
           </div>
-          <figure><img src="./img/01.jpg" alt=""></figure>
+          <div class="swiper mySwiper4">
+            <div class="right_imgs swiper-wrapper">
+              <figure class="swiper-slide"><img src="./img/01.jpg" alt=""></figure>
+              <figure class="swiper-slide"><img src="./img/02.jpg" alt=""></figure>
+            </div>
+          </div>
         </div>
         <p>more ></p>
       </div>
@@ -344,9 +311,12 @@
         </div>
       </div>
     </footer>
-    <div class="line"></div>
-  </div>
 
-  
+    <div class="line"></div>
+
+    <div class="top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  </div>
 </body>
 </html>

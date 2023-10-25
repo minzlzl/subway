@@ -32,6 +32,7 @@ body {
 
 .wrap {
   overflow-x: hidden;
+  position: relative;
 }
 .wrap .line {
   border: 3px solid #009223;
@@ -92,6 +93,7 @@ body {
   background-color: #009223;
   position: relative;
   height: 49px;
+  display: none;
 }
 .wrap header .sub > ul {
   width: 1200px;
@@ -101,6 +103,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
+}
+.wrap header .sub > ul:nth-of-type(1) {
+  display: none;
 }
 .wrap header .sub > ul:nth-of-type(2) {
   display: none;
@@ -133,6 +138,7 @@ body {
   padding-top: 90px;
 }
 .wrap main .con1_wrap {
+  cursor: pointer;
   margin-bottom: 150px;
 }
 .wrap main .con1_wrap .swiper-pagination .swiper-pagination-bullet {
@@ -399,16 +405,15 @@ body {
   font-size: 18px;
   margin-bottom: 15px;
 }
-.wrap main .con4_wrap .notice_flex > figure {
-  overflow: hidden;
+.wrap main .con4_wrap .notice_flex .mySwiper4 .right_imgs > figure {
   border-radius: 20px 0 20px 0;
 }
-.wrap main .con4_wrap .notice_flex > figure img {
+.wrap main .con4_wrap .notice_flex .mySwiper4 .right_imgs > figure img {
   border-radius: 20px 0 20px 0;
   transition: transform 0.5s;
 }
-.wrap main .con4_wrap .notice_flex > figure img:hover {
-  transform: scale(1.2);
+.wrap main .con4_wrap .notice_flex .mySwiper4 .swiper-wrapper {
+  width: 270px;
 }
 .wrap main .con4_wrap > p {
   position: absolute;
@@ -469,4 +474,21 @@ body {
 }
 .wrap footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
   font-size: 18px;
+}
+.wrap .top {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #009223;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrap .top i {
+  font-size: 20px;
+  color: #009223;
 }
