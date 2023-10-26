@@ -1,79 +1,79 @@
 {
   "sandwich":[
     { 
-      "img":"../img/sub/sandwich/spicyBBQ.png",
+      "img":"./img/sub/sandwich/spicyBBQ.png",
       "name":"스파이시 바비큐"
     },
     { 
-      "img":"../img/sub/sandwich/spicyShrimp.png",
+      "img":"./img/sub/sandwich/spicyShrimp.png",
       "name":"스파이시 쉬림프"
     },
     { 
-      "img":"../img/sub/sandwich/spicyItalia.png",
+      "img":"./img/sub/sandwich/spicyItalia.png",
       "name":"스파이시 이탈리안"
     },
     { 
-      "img":"../img/sub/sandwich/steakCheese.png",
+      "img":"./img/sub/sandwich/steakCheese.png",
       "name":"스테이크&치즈"
     },
     { 
-      "img":"../img/sub/sandwich/chickenBaconAvocado.png",
+      "img":"./img/sub/sandwich/chickenBaconAvocado.png",
       "name":"치킨 베이컨 아보카도"
     },
     { 
-      "img":"../img/sub/sandwich/shrimp.png",
+      "img":"./img/sub/sandwich/shrimp.png",
       "name":"쉬림프"
     },
     { 
-      "img":"../img/sub/sandwich/roastedChicken.png",
+      "img":"./img/sub/sandwich/roastedChicken.png",
       "name":"로스트 치킨"
     },
     { 
-      "img":"../img/sub/sandwich/rotisserieBarbecueChicken2.png",
+      "img":"./img/sub/sandwich/rotisserieBarbecueChicken2.png",
       "name":"로티세리 바비큐 치킨"
     },
     { 
-      "img":"../img/sub/sandwich/k-BBQ.png",
+      "img":"./img/sub/sandwich/k-BBQ.png",
       "name":"K-바비큐"
     },
     { 
-      "img":"../img/sub/sandwich/pulledPorkBarbecue.png",
+      "img":"./img/sub/sandwich/pulledPorkBarbecue.png",
       "name":"풀드 포크 바비큐"
     },
     { 
-      "img":"../img/sub/sandwich/subwayClub™.png",
+      "img":"./img/sub/sandwich/subwayClub™.png",
       "name":"써브웨이 클럽"
     },
     { 
-      "img":"../img/sub/sandwich/chickenTeriyaki.png",
+      "img":"./img/sub/sandwich/chickenTeriyaki.png",
       "name":"치킨 데리야끼"
     },
     { 
-      "img":"../img/sub/sandwich/italianB.M.T.™.png",
+      "img":"./img/sub/sandwich/italianB.M.T.™.png",
       "name":"이탈리안 비엠티"
     },
     { 
-      "img":"../img/sub/sandwich/b.L.T..png",
+      "img":"./img/sub/sandwich/b.L.T..png",
       "name":"비엘티"
     },
     { 
-      "img":"../img/sub/sandwich/chickenSlice.png",
+      "img":"./img/sub/sandwich/chickenSlice.png",
       "name":"치킨 슬라이스"
     },
     { 
-      "img":"../img/sub/sandwich/tuna.png",
+      "img":"./img/sub/sandwich/tuna.png",
       "name":"참치"
     },
     { 
-      "img":"../img/sub/sandwich/ham.png",
+      "img":"./img/sub/sandwich/ham.png",
       "name":"햄"
     },
     { 
-      "img":"../img/sub/sandwich/eggMayo.png",
+      "img":"./img/sub/sandwich/eggMayo.png",
       "name":"에그마요"
     },
     { 
-      "img":"../img/sub/sandwich/veggieDelite.png",
+      "img":"./img/sub/sandwich/veggieDelite.png",
       "name":"베지"
     }
   ]

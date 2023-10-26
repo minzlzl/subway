@@ -1,15 +1,15 @@
 {
   "unit":[
     { 
-      "img":"../img/sub/unit/steak&CheeseAvocadoWrap.png",
+      "img":"./img/sub/unit/steak&CheeseAvocadoWrap.png",
       "name":"스테이크&치즈 아보카도 랩"
     },
     { 
-      "img":"../img/sub/unit/shrimpEggMayoWrap.png",
+      "img":"./img/sub/unit/shrimpEggMayoWrap.png",
       "name":"쉬림프 에그마요 랩"
     },
     { 
-      "img":"../img/sub/unit/chickenBaconMiniWrap.png",
+      "img":"./img/sub/unit/chickenBaconMiniWrap.png",
       "name":"치킨 베이컨 미니 랩"
     }
   ]
