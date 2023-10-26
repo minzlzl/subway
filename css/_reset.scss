@@ -19,7 +19,7 @@ header{
   // display: flex;
   // justify-content: space-between;
   // align-items: center;
-  height: 90px;
+  height: 80px;
   position: fixed;
   top: 6px;
   left: 0;
@@ -43,7 +43,7 @@ header{
       align-items: center;
       >li{
         padding-left: 60px;
-        height: 90px;
+        height: 80px;
         display: flex;
         align-items: center;
         position: relative;
@@ -54,7 +54,7 @@ header{
           font-size: 22px;
           font-weight: 600;
           color:#333;
-          height: 90px;
+          height: 80px;
           display: flex;
           align-items: center;
           &:hover{
