@@ -206,7 +206,7 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
 }
 .wrap .unit .con1_wrap {
   margin-bottom: 150px;
-  background: url("/img/bg_02.jpg");
+  background: url("./img/bg_02.jpg");
   background-size: 100% 100%;
   width: 1920px;
   height: 380px;
