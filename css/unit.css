@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-body, ul, li, p, h1, h2, figure {
+body, ul, li, p, h1, h2, h3, figure {
   margin: 0;
   padding: 0;
 }
@@ -313,4 +313,4 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
 }
 .wrap .unit .con2_wrap ul li:hover span {
   transform: translateY(0px);
-}/*# sourceMappingURL=unit.css.map */
+}

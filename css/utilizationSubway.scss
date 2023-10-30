@@ -16,7 +16,7 @@
       justify-content: center;
       overflow: hidden;
       h2{
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 800;
         color: #fff;
         animation: 1.5s alls;
@@ -58,12 +58,16 @@
                 color: #333;
               }
               &:nth-of-type(2){
-                font-size: 20px;
+                font-size: 18px;
                 color:#666;
+                font-weight: 300;
               }
             }
             figure{
-              margin-bottom: 20px;
+              margin-bottom: 40px;
+              img{
+                width: 70%;
+              }
             }
           }
         }

@@ -1,0 +1,97 @@
+@import "_reset";
+
+.wrap{
+  overflow-x: hidden;
+  position: relative;
+  .utilizationGroupMenu{
+    padding-top: 80px;
+    .con1_wrap{
+      background: url("../img/bg_02_01.jpg");
+      background-repeat: no-repeat;
+      width: 1920px;
+      height: 350px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      .con1_txt{
+        text-align: center;
+        color: #fff;
+        animation: 1.5s alls;
+        @keyframes alls{
+          0%{transform: translateY(200px);}
+          100%{transform: translateY(0);}
+        }
+        h2{
+          font-size: 60px;
+          font-weight: 800;
+          margin-bottom: 40px;
+        }
+        p{
+          font-size: 20px;
+          border: 2px solid #fff;
+          display: inline-block;
+          padding: 10px 34px;
+          border-radius: 50px;
+        }
+      }
+    }
+    .con2_wrap{
+      width: 1200px;
+      // background-color: #f5f5f5;
+      margin: 0 auto;
+      text-align: center;
+      padding: 150px 0;
+      h3{
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 70px;    
+      }
+      ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+          width: 30%;
+          &:last-child{
+            figure{
+              img{
+                width: 60%;
+              }
+            }
+          }
+          figure{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #aaa;
+            margin: 0 auto 30px;
+          }
+          p{
+            &:nth-of-type(1){
+              color:#009223;
+              font-size: 17px;
+              font-weight: 600;
+              margin-bottom: 20px;
+            }
+            &:nth-of-type(2){
+              color: #333;
+              font-size: 22px;
+              font-weight: 600;
+              margin-bottom: 10px;
+            }
+          }
+          span{
+            color:#999;
+            font-weight: 300;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}
