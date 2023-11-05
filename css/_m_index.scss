@@ -2,20 +2,25 @@
   .wrap{
     .index{
       padding-top: 70px;
-      // .con1_wrap{
-      //   cursor: pointer;
-      //   margin-bottom: 150px;
-      //   .swiper-pagination{
-      //     .swiper-pagination-bullet{
-      //       background-color: #FFC20D;
-      //       width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
-      //       height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
-      //     }
-      //   }
-      //   .swiper-pagination-horizontal{
-      //     bottom: var(--swiper-pagination-bottom,13px);
-      //   }
-      // }
+      .con1_wrap{
+        margin-bottom: 12%;
+        .con1{
+          >figure{
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .swiper-pagination{
+          .swiper-pagination-bullet{
+            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+            height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+          }
+        }
+        .swiper-pagination-horizontal{
+          bottom: var(--swiper-pagination-bottom,13px);
+        }
+      }
       .con2_wrap{
         max-width: 95%;
         .menu_btn{
@@ -96,56 +101,24 @@
         max-width: 95%;
         .notice_flex{
           .notice_wrap{
-            width: 900px;
-            height: 300px;
+            height: auto;
+            margin-right:15px;
             .notice_tit{
-              padding: 0 50px;
-              margin-bottom: 30px;
-              >figure{
-                margin-right: 10px;
-                img{
-                  width: 20px;
-                  color:#333;
-                }
-              }
-              >p{
-                font-size: 22px;
-                color:#333;
-                font-weight: 600;
-              }
-            }
-            .notice{
-              p{
-                padding: 0 50px;
-                color:#777;
-                font-size: 18px;
-                margin-bottom: 15px;
-              }
+              margin-bottom: 20px;
             }
           }
           .mySwiper4{
             .right_imgs{
               >figure{
-                border-radius: 20px 0 20px 0;
                 img{
-                  border-radius: 20px 0 20px 0;
-                  transition: transform .5s;
-                  // &:hover{
-                  //   transform: scale(1.2); 
-                  // }
+                  width: 100%;
                 }
               }
-            }
-            .swiper-wrapper{
-              width: 270px;
             }
           }
         }
         >p{
-          position: absolute;
-          bottom: 20px;
-          right: 330px;
-          cursor: pointer;
+          right: 26%;
         }
       }
     }
