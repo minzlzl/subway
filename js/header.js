@@ -15,13 +15,22 @@ const elA = document.querySelectorAll('.header_wrap>ul>li a'),
       sub = document.querySelector('.sub'),
       elUl = document.querySelectorAll('.sub>ul');
 let ulNum = 0;
+// const mediaQueryList = window.matchMedia('(max-width: 600px)')
 elA.forEach((v,k)=>{
-  v.addEventListener("mouseover",function(){
-    sub.style = `display:block`;
-    let left = v.getBoundingClientRect().left;
-    elUl[ulNum].style= `display:none`;
-    elUl[k].style= `display:flex; left:${left}px`;
-    ulNum = k;
+  v.addEventListener("mouseover",function(){  
+    if(window.matchMedia("(min-width: 1650px)").matches){
+      sub.style = `display:block`;
+      let left = v.getBoundingClientRect().left;
+      elUl[ulNum].style= `display:none`;
+      elUl[k].style= `display:flex; left:${left}px`;
+      ulNum = k;
+    }else{
+      sub.style = `display:block`;
+      let left = v.getBoundingClientRect().left;
+      elUl[ulNum].style= `display:none`;
+      elUl[k].style= `display:block; left:${left}px`;
+      ulNum = k;
+    }
   });
 });
 elUl.forEach((hover)=>{
