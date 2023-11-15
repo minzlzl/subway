@@ -114,4 +114,22 @@
     }
   }
 }
-@media (max-width:768px){}
+@media (max-width:768px){
+  header{
+    .header_wrap{
+      >a{
+        img{
+          width:110px;
+        }
+      }
+      >ul{
+        >li{
+          padding-left:25px;
+          >a{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
