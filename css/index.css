@@ -946,21 +946,21 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
     margin-bottom: 25PX;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box figure img {
-    width: 150px;
+    width: 130px;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box .menu_txt_hover {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box .menu_txt_hover .menu_bg_txt > p {
     font-size: 15px;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_txt {
-    width: 150px;
+    width: 130px;
   }
   .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_txt > p {
     font-size: 17px;
