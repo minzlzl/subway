@@ -307,6 +307,87 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
     font-size: 15px;
   }
 }
+@media (max-width: 600px) {
+  header {
+    height: auto;
+  }
+  header .header_wrap {
+    max-width: 90%;
+    display: block;
+    padding: 10px 0;
+  }
+  header .header_wrap > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  header .header_wrap > a img {
+    width: 120px;
+  }
+  header .header_wrap > ul {
+    justify-content: space-between;
+  }
+  header .header_wrap > ul > li {
+    height: auto;
+    padding-left: 0px;
+  }
+  header .header_wrap > ul > li > a {
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  header .header_wrap {
+    max-width: 95%;
+  }
+  header .header_wrap > a img {
+    width: 110px;
+  }
+  header .header_wrap > ul > li > a {
+    font-size: 14px;
+  }
+  footer .footer_wrap .top_wrap > ul > li {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  footer .footer_wrap .bottom_wrap {
+    padding: 25px 0 20px 0;
+  }
+  footer .footer_wrap .bottom_wrap .bot_left > ul li {
+    font-size: 12px;
+  }
+  footer .footer_wrap .bottom_wrap .bot_left > p {
+    font-size: 12px;
+  }
+  footer .footer_wrap .bottom_wrap .bot_right i {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+  }
+  footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  header .header_wrap > a {
+    margin-bottom: 10px;
+  }
+  header .header_wrap > a img {
+    width: 100px;
+  }
+  header .header_wrap > ul > li > a {
+    font-size: 12px;
+  }
+  footer .top_wrap > ul {
+    flex-wrap: wrap;
+  }
+  footer .top_wrap > ul > li {
+    margin-bottom: 5px;
+  }
+  footer .top_wrap > ul > li:last-child {
+    margin-bottom: 0;
+  }
+}
 .wrap {
   overflow-x: hidden;
   position: relative;
@@ -379,4 +460,4 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
 }
 .wrap .utilizationSubway .con2_wrap .con2 ul li figure img {
   width: 70%;
-}
+}/*# sourceMappingURL=utilizationSubway.css.map */
