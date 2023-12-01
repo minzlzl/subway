@@ -1044,4 +1044,31 @@ footer .footer_wrap .bottom_wrap .bot_right i:nth-of-type(3) {
   .wrap .index .con1_wrap_ .swiper-pagination-horizontal {
     bottom: var(--swiper-pagination-bottom, 13px);
   }
+  .wrap .index .con2_wrap .menu_btn {
+    margin-bottom: 25PX;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box {
+    width: 130px;
+    height: 130px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box figure img {
+    width: 130px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box .menu_txt_hover {
+    width: 130px;
+    height: 130px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_box .menu_txt_hover .menu_bg_txt > p {
+    font-size: 15px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_txt {
+    width: 130px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_txt > p {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .wrap .index .con2_wrap .menu_wrap .menu > ul li .menu_txt > span {
+    font-size: 15px;
+  }
 }

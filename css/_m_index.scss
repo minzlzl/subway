@@ -422,52 +422,47 @@
           bottom: var(--swiper-pagination-bottom,13px);
         }
       }
-      // .con2_wrap{
-      //   margin: 0 auto 12%;
-      //   >h2{
-      //     font-size: 25px;
-      //     margin-bottom: 15px;
-      //   }
-      //   .menu_btn{
-      //     margin-bottom: 25PX;
-      //   }
-      //   .menu_wrap{
-      //     .menu{
-      //       >ul{
-      //         li{
-      //           .menu_box{
-      //             width: 130px;
-      //             height: 130px;
-      //             figure{
-      //               img{
-      //                 width: 130px;
-      //               }
-      //             }
-      //             .menu_txt_hover{
-      //               width: 130px;
-      //               height: 130px;
-      //               .menu_bg_txt{
-      //                 >p{
-      //                   font-size: 15px;
-      //                 }
-      //               }
-      //             }
-      //           }
-      //           .menu_txt{
-      //             width: 130px;
-      //             >p{
-      //               font-size: 17px;
-      //               margin-bottom: 5px;
-      //             }
-      //             >span{
-      //               font-size: 15px;
-      //             }
-      //           }
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
+      .con2_wrap{
+        .menu_btn{
+          margin-bottom: 25PX;
+        }
+        .menu_wrap{
+          .menu{
+            >ul{
+              li{
+                .menu_box{
+                  width: 130px;
+                  height: 130px;
+                  figure{
+                    img{
+                      width: 130px;
+                    }
+                  }
+                  .menu_txt_hover{
+                    width: 130px;
+                    height: 130px;
+                    .menu_bg_txt{
+                      >p{
+                        font-size: 15px;
+                      }
+                    }
+                  }
+                }
+                .menu_txt{
+                  width: 130px;
+                  >p{
+                    font-size: 17px;
+                    margin-bottom: 5px;
+                  }
+                  >span{
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       // .con3_wrap{
       //   margin: 0 auto 12%;
       //   >h2{
