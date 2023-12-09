@@ -10,7 +10,6 @@ window.addEventListener("scroll",function(){
   tops();
 })
 
-
 const elA = document.querySelectorAll('.header_wrap>ul>li a'),
       sub = document.querySelector('.sub'),
       elUl = document.querySelectorAll('.sub>ul');
@@ -25,7 +24,8 @@ elA.forEach((v,k)=>{
       elUl[k].style= `display:flex; left:${left}px`;
       ulNum = k;
     }else{
-      sub.style = `display:block`;
+      // sub.style = `display:block`;
+      sub.style = `display:none`;
       let left = v.getBoundingClientRect().left;
       elUl[ulNum].style= `display:none`;
       elUl[k].style= `display:block; left:${left}px`;
