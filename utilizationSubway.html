@@ -85,7 +85,9 @@
             </li>
             <li class="swiper-slide">
               <span>STEP 2</span>
-              <p>빵 선택 (샐러드 선택 시 제외)</p>
+              <p>빵 선택
+                (샐러드 선택 시 제외)
+              </p>
               <figure><img src="./img/utilization02.png" alt=""></figure>
               <p>매장에서 직접 구운 6가지 종류 중 고객님이 원하는 빵으로 추가비용 없이 선택 가능합니다.</p>
             </li>
@@ -151,13 +153,18 @@
 
   <script>
     var swiper = new Swiper(".mySwiper0", {
-      slidesPerView: 1.9,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 40,
       centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        481: {
+          slidesPerView: 1.9, // 480px 이상일 때
+        }
+      }
     });
   </script>
 </body>
